@@ -82,6 +82,11 @@ class HeaderThree extends Component {
                     "#contact",
                   ]}
                 />
+                <li>
+                  <a href="https://github.com/SiloCityLabs" target="_blank">
+                    Github
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>
