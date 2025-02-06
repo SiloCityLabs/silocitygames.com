@@ -3,7 +3,7 @@ import ScrollToTop from "react-scroll-up";
 
 import FooterTwo from "../component/footer/FooterTwo";
 import { FiChevronUp } from "react-icons/fi";
-import Header from "../component/header/HeaderFour";
+import Header from "../component/header/HeaderThree";
 import TabThree from "../elements/tab/TabThree";
 import Helmet from "../component/common/Helmet";
 

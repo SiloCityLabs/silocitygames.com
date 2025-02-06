@@ -93,9 +93,6 @@ class HeaderThree extends Component {
                 <ScrollSpy
                   sectionIds={[
                     "#home",
-                    "#about",
-                    "#service",
-                    "#portfolio",
                     "#blog",
                     "#contact",
                   ]}
