@@ -76,13 +76,12 @@ class HeaderThree extends Component {
             </div>
             <nav className="mainmenunav d-lg-block ml--50">
               <ul className="mainmenu">
-                <ScrollSpy
-                  sectionIds={[
-                    "#home",
-                    "#blog",
-                    "#contact",
-                  ]}
-                />
+                <li className="activeClass">
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="https://silocitylabs.com/">Blog</a>
+                </li>
               </ul>
             </nav>
           </div>
