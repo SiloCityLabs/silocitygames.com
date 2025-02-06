@@ -6,7 +6,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 
-import logo from "../../assets/images/logo/logo.png";
+import scgLogo from "../../assets/images/logo/scg/72x72.png";
 
 const SocialShare = [
   { Social: <FaFacebookF />, link: "https://www.facebook.com/" },
@@ -24,13 +24,13 @@ const FooterTwo = () => {
       <div className="wrapper plr--50 plr_sm--20">
         <div className="row align-items-center justify-content-between">
           <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-            <div className="inner">
+            {/* <div className="inner">
               <div className="logo text-center text-sm-left mb_sm--20">
                 <a href="/home-one">
-                  <img src={logo} alt="Logo images" />
+                  <img src={scgLogo} alt="Logo images" />
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="col-lg-4 col-md-6 col-sm-6 col-12">
             <div className="inner text-center">

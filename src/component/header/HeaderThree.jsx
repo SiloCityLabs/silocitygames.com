@@ -7,11 +7,7 @@ import {
 } from "react-icons/fa";
 import { FiX, FiMenu } from "react-icons/fi";
 
-import logoDefault from "../../assets/images/logo/logo.png";
-import logoLight from "../../assets/images/logo/logo-light.png";
-import logoDark from "../../assets/images/logo/logo-dark.png";
-import logoSymbolDark from "../../assets/images/logo/logo-symbol-dark.png";
-import logoSymbolLight from "../../assets/images/logo/logo-symbol-light.png";
+import scgLogo from "../../assets/images/logo/scg/72x72.png";
 import ScrollSpy from "../common/ScrollSpy";
 
 const SocialShare = [
@@ -44,7 +40,7 @@ class HeaderThree extends Component {
     document.querySelector(".header-wrapper")?.classList.remove("menu-open");
   }
 
-  stickyHeader() {}
+  stickyHeader() { }
 
   render() {
     window.addEventListener("scroll", function () {
@@ -68,18 +64,7 @@ class HeaderThree extends Component {
       }
     }
     const { logo, color = "default-color" } = this.props;
-    let logoUrl;
-    if (logo === "light") {
-      logoUrl = <img src={logoLight} alt="Digital Agency" />;
-    } else if (logo === "dark") {
-      logoUrl = <img src={logoDark} alt="Digital Agency" />;
-    } else if (logo === "symbol-dark") {
-      logoUrl = <img src={logoSymbolDark} alt="Digital Agency" />;
-    } else if (logo === "symbol-light") {
-      logoUrl = <img src={logoSymbolLight} alt="Digital Agency" />;
-    } else {
-      logoUrl = <img src={logoDefault} alt="Digital Agency" />;
-    }
+    const logoUrl = <img src={scgLogo} alt="Digital Agency" />;
 
     return (
       <header className={`header-area header-style-two header--fixed ${color}`}>
@@ -109,14 +94,6 @@ class HeaderThree extends Component {
                   </li>
                 ))}
               </ul>
-            </div>
-            <div className="header-btn">
-              <a
-                className="rn-btn"
-                href="https://themeforest.net/checkout/from_item/25457315?license=regular"
-              >
-                <span>buy now</span>
-              </a>
             </div>
             {/* Start Humberger Menu  */}
             <div className="humberger-menu d-block d-lg-none pl--20">
