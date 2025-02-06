@@ -26,7 +26,7 @@ class TabStyleThree extends Component {
     const { column } = this.props;
 
     return (
-      <div>
+      <div id="project-list">
         <Tabs>
           <div className="row text-center">
             <div className="col-lg-12">

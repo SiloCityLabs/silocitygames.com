@@ -5,3 +5,9 @@
 .portfolio-static .thumbnail a img {
     max-height: 360px;
 }
+
+@media (max-width: 768px) {
+    #project-list {
+        margin-top: 50px;
+    }
+}
