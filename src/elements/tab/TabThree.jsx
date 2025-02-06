@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Gallery, Item } from "react-photoswipe-gallery";
+import {
+  FaGithub
+} from "react-icons/fa";
 
 import portfolio1 from "../../assets/images/portfolio/big/dp-big--portfolio-01.jpg";
-import cod_rcg from "../../assets/images/projects/game_sites/cod_rcg.webp";
 
 //json
 import gameSites from "../../json/projects/game_sites.json";
@@ -87,7 +89,17 @@ function gallerySection(projects, column) {
                   </div>
                   <div className="content">
                     <div className="inner">
-                      <p>{value.category}</p>
+                      <p>
+                        <span className="left">{value.category}</span>
+
+                        {value.github?.trim() && (
+                          <span className="right" style={{ float: "right" }}>
+                            <a href={value.github} target="_blank">
+                              <FaGithub size={30} />
+                            </a>
+                          </span>
+                        )}
+                      </p>
                       <h4>
                         <a href={value.url}>{value.title}</a>
                       </h4>
