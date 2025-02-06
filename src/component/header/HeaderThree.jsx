@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {
   FaTwitter,
-  FaInstagram,
+  FaGithub,
   FaFacebookF,
   FaLinkedinIn,
 } from "react-icons/fa";
@@ -9,12 +9,13 @@ import { FiX, FiMenu } from "react-icons/fi";
 
 import scgLogo from "../../assets/images/logo/scg/72x72.png";
 import ScrollSpy from "../common/ScrollSpy";
+import socials from "../../json/socials.json";
 
 const SocialShare = [
-  { Social: <FaFacebookF />, link: "https://www.facebook.com/" },
-  { Social: <FaLinkedinIn />, link: "https://www.linkedin.com/" },
-  { Social: <FaInstagram />, link: "https://www.instagram.com/" },
-  { Social: <FaTwitter />, link: "https://twitter.com/" },
+  { Social: <FaFacebookF />, link: socials.facebook },
+  { Social: <FaLinkedinIn />, link: socials.linkedIn },
+  { Social: <FaGithub />, link: socials.github },
+  { Social: <FaTwitter />, link: socials.twitter },
 ];
 class HeaderThree extends Component {
   constructor(props) {
@@ -82,11 +83,6 @@ class HeaderThree extends Component {
                     "#contact",
                   ]}
                 />
-                <li>
-                  <a href="https://github.com/SiloCityLabs" target="_blank">
-                    Github
-                  </a>
-                </li>
               </ul>
             </nav>
           </div>

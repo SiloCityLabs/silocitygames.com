@@ -1,5 +1,6 @@
 // Create Import File
 import "./index.scss";
+import "./assets/css/main.css";
 import "photoswipe/dist/photoswipe.css";
 import PageScrollTop from "./component/PageScrollTop";
 

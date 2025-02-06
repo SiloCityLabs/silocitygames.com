@@ -1,7 +1,7 @@
 [
     {
-        "image": "",
-        "bigImage": "",
+        "image": "src/assets/images/projects/game_sites/cod_rcg.webp",
+        "bigImage": "src/assets/images/projects/game_sites/cod_rcg.webp",
         "category": "Game Sites",
         "title": "COD RCG",
         "url": "https://codrcg.com/",
@@ -14,5 +14,13 @@
         "title": "Craft Random",
         "url": "https://craftrandom.com/",
         "github": "https://github.com/SiloCityLabs/craftrandom.com/"
+    },
+    {
+        "image": "",
+        "bigImage": "",
+        "category": "Game Sites",
+        "title": "BeyBuilder X",
+        "url": "https://fabelavalon.github.io/BeyBuilderX/",
+        "github": "https://github.com/fabelavalon/BeyBuilderX"
     }
 ]

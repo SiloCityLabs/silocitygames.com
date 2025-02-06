@@ -1,0 +1,7 @@
+.portfolio-static .thumbnail {
+    text-align: center;
+}
+
+.portfolio-static .thumbnail a img {
+    max-height: 360px;
+}

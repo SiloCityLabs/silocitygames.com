@@ -3,10 +3,11 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Gallery, Item } from "react-photoswipe-gallery";
 
 import portfolio1 from "../../assets/images/portfolio/big/dp-big--portfolio-01.jpg";
+import cod_rcg from "../../assets/images/projects/game_sites/cod_rcg.webp";
 
 //json
-import gameSites from "../../json/game_sites.json";
-import accessories from "../../json/accessories.json";
+import gameSites from "../../json/projects/game_sites.json";
+import accessories from "../../json/projects/accessories.json";
 
 const allProjects = [...gameSites, ...accessories];
 
@@ -18,7 +19,6 @@ class TabStyleThree extends Component {
       tab1: 0,
       tab2: 0,
       tab3: 0,
-      tab4: 0,
       isOpen: false,
     };
   }
@@ -76,9 +76,9 @@ function gallerySection(projects, column) {
                           <a onClick={open}>
                             <img
                               ref={ref}
-                              src={value.image || portfolio1} // Use "portfolio1" if value.image is empty
+                              src={value.image || portfolio1}
                               alt="Portfolio Images"
-                              onError={(e) => { e.target.onerror = null; e.target.src = "portfolio1"; }} // Fallback on image load error
+                              onError={(e) => { e.target.onerror = null; e.target.src = portfolio1; }} // Fallback on image load error
                             />
                           </a>
                         )}
