@@ -23,7 +23,7 @@ const SlideList = [
 const DesignerPortfolio = () => {
   return (
     <div>
-      <Helmet pageTitle="Designer Portfolio" />
+      <Helmet pageTitle="Silo City Games" />
       {/* Start Header Area  */}
       <Header
         headerPosition="header--static"
