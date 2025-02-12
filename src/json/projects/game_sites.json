@@ -1,26 +1,34 @@
 [
-    {
-        "image": "src/assets/images/projects/game_sites/cod_rcg.webp",
-        "bigImage": "src/assets/images/projects/game_sites/cod_rcg.webp",
-        "category": "Game Sites",
-        "title": "COD RCG",
-        "url": "https://codrcg.com/",
-        "github": "https://github.com/SiloCityLabs/codrcg.com"
-    },
-    {
-        "image": "",
-        "bigImage": "",
-        "category": "Game Sites",
-        "title": "Craft Random",
-        "url": "https://craftrandom.com/",
-        "github": "https://github.com/SiloCityLabs/craftrandom.com/"
-    },
-    {
-        "image": "",
-        "bigImage": "",
-        "category": "Game Sites",
-        "title": "BeyBuilder X",
-        "url": "https://fabelavalon.github.io/BeyBuilderX/",
-        "github": "https://github.com/fabelavalon/BeyBuilderX"
-    }
+  {
+    "image": "src/assets/images/projects/game_sites/cod_rcg.webp",
+    "bigImage": "src/assets/images/projects/game_sites/cod_rcg.webp",
+    "category": "Game Sites",
+    "title": "COD RCG",
+    "url": "https://codrcg.com/",
+    "github": "https://github.com/SiloCityLabs/codrcg.com"
+  },
+  {
+    "image": "",
+    "bigImage": "",
+    "category": "Game Sites",
+    "title": "Fortnite",
+    "url": "https://fortnite.silocitygames.com/",
+    "github": "https://github.com/SiloCityLabs/fortnite.silocitygames.com"
+  },
+  {
+    "image": "",
+    "bigImage": "",
+    "category": "Game Sites",
+    "title": "Craft Random",
+    "url": "https://craftrandom.com/",
+    "github": "https://github.com/SiloCityLabs/craftrandom.com/"
+  },
+  {
+    "image": "",
+    "bigImage": "",
+    "category": "Game Sites",
+    "title": "BeyBuilder X",
+    "url": "https://fabelavalon.github.io/BeyBuilderX/",
+    "github": "https://github.com/fabelavalon/BeyBuilderX"
+  }
 ]
