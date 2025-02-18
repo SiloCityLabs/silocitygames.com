@@ -12,8 +12,24 @@
     "bigImage": "",
     "category": "Game Sites",
     "title": "Fortnite",
-    "url": "https://fortnite.silocitygames.com/",
+    "url": "https://fortnite.silocitygames.com",
     "github": "https://github.com/SiloCityLabs/fortnite.silocitygames.com"
+  },
+  {
+    "image": "",
+    "bigImage": "",
+    "category": "Game Sites",
+    "title": "Off The Grid RCG",
+    "url": "https://offthegrid.silocitygames.com",
+    "github": "https://github.com/SiloCityLabs/offthegrid.silocitygames.com"
+  },
+  {
+    "image": "",
+    "bigImage": "",
+    "category": "Game Sites",
+    "title": "Battlefield RCG",
+    "url": "https://battlefield.silocitygames.com",
+    "github": "https://github.com/SiloCityLabs/battlefield.silocitygames.com"
   },
   {
     "image": "",
@@ -28,7 +44,7 @@
     "bigImage": "",
     "category": "Game Sites",
     "title": "BeyBuilder X",
-    "url": "https://fabelavalon.github.io/BeyBuilderX/",
+    "url": "https://fabelavalon.github.io/BeyBuilderX",
     "github": "https://github.com/fabelavalon/BeyBuilderX"
   }
 ]
