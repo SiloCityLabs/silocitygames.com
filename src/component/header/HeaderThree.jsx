@@ -69,7 +69,7 @@ class HeaderThree extends Component {
         <div className="header-wrapper">
           <div className="header-left d-flex align-items-center">
             <div className="logo" style={{ cursor: "pointer" }}>
-              <a href={this.props.homeLink}>{logoUrl}</a>
+              <a href="/">{logoUrl}</a>
             </div>
             <nav className="mainmenunav d-lg-block ml--50">
               <ul className="mainmenu">
