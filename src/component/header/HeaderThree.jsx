@@ -1,14 +1,8 @@
 import React, { Component } from "react";
-import {
-  FaTwitter,
-  FaGithub,
-  FaFacebookF,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaTwitter, FaGithub, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FiX, FiMenu } from "react-icons/fi";
 
-import scgLogo from "../../assets/images/logo/scg/72x72.png";
-import ScrollSpy from "../common/ScrollSpy";
+import scgLogo from "/logo.svg"; // Updated import path to point to the public directory
 import socials from "../../json/socials.json";
 
 const SocialShare = [
@@ -41,7 +35,7 @@ class HeaderThree extends Component {
     document.querySelector(".header-wrapper")?.classList.remove("menu-open");
   }
 
-  stickyHeader() { }
+  stickyHeader() {}
 
   render() {
     window.addEventListener("scroll", function () {
@@ -65,13 +59,16 @@ class HeaderThree extends Component {
       }
     }
     const { logo, color = "default-color" } = this.props;
-    const logoUrl = <img src={scgLogo} alt="Digital Agency" />;
+    // Added width and height attributes to the img tag
+    const logoUrl = (
+      <img src={scgLogo} alt="Digital Agency" width="100" height="100" />
+    );
 
     return (
       <header className={`header-area header-style-two header--fixed ${color}`}>
         <div className="header-wrapper">
           <div className="header-left d-flex align-items-center">
-            <div className="logo">
+            <div className="logo" style={{ cursor: "pointer" }}>
               <a href={this.props.homeLink}>{logoUrl}</a>
             </div>
             <nav className="mainmenunav d-lg-block ml--50">
@@ -90,7 +87,9 @@ class HeaderThree extends Component {
               <ul className="social-share social-style--2 color-black d-flex justify-content-start liststyle">
                 {SocialShare.map((val, i) => (
                   <li key={i}>
-                    <a href={`${val.link}`} target="_blank">{val.Social}</a>
+                    <a href={`${val.link}`} target="_blank">
+                      {val.Social}
+                    </a>
                   </li>
                 ))}
               </ul>
