@@ -1,10 +1,10 @@
 [
-    {
-        "image": "",
-        "bigImage": "",
-        "category": "Accessories",
-        "title": "Joycon Phone Adapter",
-        "url": "https://shop.silocitylabs.com/products/joycon-phone-adapter",
-        "github": "https://github.com/SiloCityLabs/Cuttlephone"
-    }
+  {
+    "image": "/images/cuttlephone-scg.webp",
+    "bigImage": "/images/cuttlephone-scg.webp",
+    "category": "Accessories",
+    "title": "Joycon Phone Adapter",
+    "url": "https://shop.silocitylabs.com/products/joycon-phone-adapter",
+    "github": "https://github.com/SiloCityLabs/Cuttlephone"
+  }
 ]

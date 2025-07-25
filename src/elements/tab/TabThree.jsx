@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { Gallery, Item } from "react-photoswipe-gallery";
-import {
-  FaGithub
-} from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 import portfolio1 from "../../assets/images/portfolio/big/dp-big--portfolio-01.jpg";
 
@@ -12,7 +9,6 @@ import gameSites from "../../json/projects/game_sites.json";
 import accessories from "../../json/projects/accessories.json";
 
 const allProjects = [...gameSites, ...accessories];
-
 
 class TabStyleThree extends Component {
   constructor(props) {
@@ -59,60 +55,65 @@ class TabStyleThree extends Component {
 
 function gallerySection(projects, column) {
   return (
-    <Gallery>
-      <TabPanel className="row row--35">
-        {projects.map((value, index) => (
-          <div className={`${column}`} key={index}>
-            <div className="item-portfolio-static">
-              <div>
-                <div className="portfolio-static">
-                  <div className="thumbnail-inner">
-                    <div className="thumbnail">
-                      <Item
-                        original={value.bigImage || portfolio1}
-                        thumbnail={value.bigImage || portfolio1}
-                        width="1024"
-                        height="768"
-                      >
-                        {({ ref, open }) => (
-                          <a onClick={open}>
-                            <img
-                              ref={ref}
-                              src={value.image || portfolio1}
-                              alt="Portfolio Images"
-                              onError={(e) => { e.target.onerror = null; e.target.src = portfolio1; }} // Fallback on image load error
-                            />
-                          </a>
-                        )}
-                      </Item>
-                    </div>
+    <TabPanel className="row row--35">
+      {projects.map((value, index) => (
+        <div className={`${column}`} key={index}>
+          <div className="item-portfolio-static">
+            <div>
+              <div className="portfolio-static">
+                <div className="thumbnail-inner">
+                  <div className="thumbnail">
+                    <a
+                      href={value.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={value.image || portfolio1}
+                        alt="Portfolio Images"
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.src = portfolio1;
+                        }} // Fallback on image load error
+                      />
+                    </a>
                   </div>
-                  <div className="content">
-                    <div className="inner">
-                      <p>
-                        <span className="left">{value.category}</span>
+                </div>
+                <div className="content">
+                  <div className="inner">
+                    <p>
+                      <span className="left">{value.category}</span>
 
-                        {value.github?.trim() && (
-                          <span className="right" style={{ float: "right" }}>
-                            <a href={value.github} target="_blank">
-                              <FaGithub size={30} />
-                            </a>
-                          </span>
-                        )}
-                      </p>
-                      <h4>
-                        <a href={value.url}>{value.title}</a>
-                      </h4>
-                    </div>
+                      {value.github?.trim() && (
+                        <span className="right" style={{ float: "right" }}>
+                          <a
+                            href={value.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <FaGithub size={30} />
+                          </a>
+                        </span>
+                      )}
+                    </p>
+                    <h4>
+                      <a
+                        href={value.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {value.title}
+                      </a>
+                    </h4>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        ))}
-      </TabPanel>
-    </Gallery>
-  )
+        </div>
+      ))}
+    </TabPanel>
+  );
 }
 
 export default TabStyleThree;
