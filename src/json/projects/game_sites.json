@@ -1,7 +1,7 @@
 [
   {
-    "image": "src/assets/images/projects/game_sites/cod_rcg.webp",
-    "bigImage": "src/assets/images/projects/game_sites/cod_rcg.webp",
+    "image": "/images/codrcg-scg.webp",
+    "bigImage": "/images/codrcg-scg.webp",
     "category": "Game Sites",
     "title": "COD RCG",
     "url": "https://codrcg.com/",
