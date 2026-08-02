@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Yahtzee",
+    "description": "Solo & pass-and-play scorecard",
+    "url": "https://yahtzee.silocitygames.com",
+    "source": "Silo City Games",
+    "accent": "#c41e3a",
+    "accentSoft": "#0f2e22",
+    "tags": ["dice", "scorecard", "multiplayer", "solo"]
+  },
+  {
+    "title": "Skull King",
+    "description": "Bids, tricks & bonuses",
+    "url": "https://skullking.silocitygames.com",
+    "source": "Silo City Games",
+    "accent": "#c45c3e",
+    "accentSoft": "#1a1410",
+    "tags": ["cards", "trick-taking", "scorecard", "bidding"]
+  },
+  {
+    "title": "Phase 10",
+    "description": "Scoresheet via TallyPad",
+    "url": "https://tallypad.onebuffalolabs.com/app/new/",
+    "source": "TallyPad",
+    "accent": "#5b5fc7",
+    "accentSoft": "#1e1f3a",
+    "tags": ["cards", "scorecard", "phases"]
+  },
+  {
+    "title": "Simple Score",
+    "description": "Freeform tally via TallyPad",
+    "url": "https://tallypad.onebuffalolabs.com/app/new/",
+    "source": "TallyPad",
+    "accent": "#2a9d8f",
+    "accentSoft": "#0f2a27",
+    "tags": ["scorecard", "tally", "generic"]
+  },
+  {
+    "title": "Golf",
+    "description": "Scoresheet via TallyPad",
+    "url": "https://tallypad.onebuffalolabs.com/app/new/",
+    "source": "TallyPad",
+    "accent": "#3d8b40",
+    "accentSoft": "#14261a",
+    "tags": ["golf", "scorecard", "sports"]
+  },
+  {
+    "title": "Putt-Putt",
+    "description": "Mini golf scoresheet via TallyPad",
+    "url": "https://tallypad.onebuffalolabs.com/app/new/",
+    "source": "TallyPad",
+    "accent": "#e09f3e",
+    "accentSoft": "#2a2110",
+    "tags": ["mini-golf", "scorecard", "sports"]
+  }
+]
