@@ -10,14 +10,15 @@ import BoardGames from "./home/BoardGames";
 
 import Error404 from "./elements/error404";
 
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
       <Routes>
         <Route path="/">
           <Route index element={<DesignerPortfolio />} />
-          <Route path="board-games" element={<BoardGames />} />
+          <Route path="scorekeepers" element={<BoardGames />} />
+          <Route path="board-games" element={<Navigate to="/scorekeepers" replace />} />
 
           {/* Error Route */}
           <Route path={`404`} element={<Error404 />} />

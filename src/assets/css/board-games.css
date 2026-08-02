@@ -1,0 +1,117 @@
+/* Compact board-game hub cards — per-game accent only */
+
+.board-games-hub .board-games-search {
+  margin-bottom: 24px;
+}
+
+.board-games-hub .board-games-search input {
+  height: 44px;
+  line-height: 40px;
+  margin-bottom: 0;
+  padding-left: 44px;
+}
+
+.board-games-hub .board-games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.board-games-hub .board-game-card {
+  display: flex;
+  align-items: stretch;
+  min-height: 64px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.board-games-hub .board-game-card:hover,
+.board-games-hub .board-game-card:focus-visible {
+  border-color: var(--game-accent, #f9004d);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.board-games-hub .board-game-card:hover .board-game-card__title,
+.board-games-hub .board-game-card:focus-visible .board-game-card__title {
+  color: var(--game-accent, #f9004d);
+}
+
+.board-games-hub .board-game-card__swatch {
+  flex: 0 0 6px;
+  background: linear-gradient(
+    180deg,
+    var(--game-accent, #f9004d),
+    var(--game-accent-soft, #1f1f25)
+  );
+}
+
+.board-games-hub .board-game-card__body {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.board-games-hub .board-game-card__meta {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8a8a93;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board-games-hub .board-game-card__title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #1f1f25;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.15s ease;
+}
+
+.board-games-hub .board-game-card__title span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.board-games-hub .board-game-card__title svg {
+  flex: none;
+  opacity: 0.4;
+}
+
+.board-games-hub .board-game-card__desc {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.3;
+  color: rgba(29, 29, 36, 0.65);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board-games-hub .board-games-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 24px 8px;
+  color: #7e7e7e;
+}

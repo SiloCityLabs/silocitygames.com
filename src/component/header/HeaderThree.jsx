@@ -77,7 +77,7 @@ class HeaderThree extends Component {
                   <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="/board-games">Board Games</a>
+                  <a href="/scorekeepers">Scorekeepers</a>
                 </li>
                 <li>
                   <a href="https://silocitylabs.com/">Blog</a>
