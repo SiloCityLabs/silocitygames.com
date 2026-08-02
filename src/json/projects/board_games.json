@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Yahtzee",
+    "description": "Solo score tracking and pass-and-play for 2–6 players.",
+    "url": "https://yahtzee.silocitygames.com",
+    "source": "Silo City Games",
+    "tags": ["dice", "scorecard", "multiplayer", "solo"]
+  },
+  {
+    "title": "Skull King",
+    "description": "Turn-by-turn bids, tricks, bonuses, and running totals.",
+    "url": "https://skullking.silocitygames.com",
+    "source": "Silo City Games",
+    "tags": ["cards", "trick-taking", "scorecard", "bidding"]
+  },
+  {
+    "title": "Phase 10",
+    "description": "Digital Phase 10 scoresheet — choose it on TallyPad.",
+    "url": "https://tallypad.onebuffalolabs.com/app/new/",
+    "source": "TallyPad",
+    "tags": ["cards", "scorecard", "phases"]
+  },
+  {
+    "title": "Simple Score",
+    "description": "A quick freeform tally for any game night.",
+    "url": "https://tallypad.onebuffalolabs.com/app/new/",
+    "source": "TallyPad",
+    "tags": ["scorecard", "tally", "generic"]
+  }
+]

@@ -6,6 +6,7 @@ import PageScrollTop from "./component/PageScrollTop";
 
 // Home layout
 import DesignerPortfolio from "./home/DesignerPortfolio";
+import BoardGames from "./home/BoardGames";
 
 import Error404 from "./elements/error404";
 
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/">
           <Route index element={<DesignerPortfolio />} />
+          <Route path="board-games" element={<BoardGames />} />
 
           {/* Error Route */}
           <Route path={`404`} element={<Error404 />} />
