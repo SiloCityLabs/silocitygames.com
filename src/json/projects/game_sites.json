@@ -1,5 +1,13 @@
 [
   {
+    "image": "/images/scorekeepers-scg.webp",
+    "bigImage": "/images/scorekeepers-scg.webp",
+    "category": "Game Sites",
+    "title": "Scorekeepers",
+    "url": "/scorekeepers",
+    "github": ""
+  },
+  {
     "image": "/images/codrcg-scg.webp",
     "bigImage": "/images/codrcg-scg.webp",
     "category": "Game Sites",

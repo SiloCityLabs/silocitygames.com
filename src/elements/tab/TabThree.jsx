@@ -56,62 +56,61 @@ class TabStyleThree extends Component {
 function gallerySection(projects, column) {
   return (
     <TabPanel className="row row--35">
-      {projects.map((value, index) => (
-        <div className={`${column}`} key={index}>
-          <div className="item-portfolio-static">
-            <div>
-              <div className="portfolio-static">
-                <div className="thumbnail-inner">
-                  <div className="thumbnail">
-                    <a
-                      href={value.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src={value.image || portfolio1}
-                        alt="Portfolio Images"
-                        onError={(e) => {
-                          e.target.onerror = null;
-                          e.target.src = portfolio1;
-                        }} // Fallback on image load error
-                      />
-                    </a>
-                  </div>
-                </div>
-                <div className="content">
-                  <div className="inner">
-                    <p>
-                      <span className="left">{value.category}</span>
+      {projects.map((value, index) => {
+        const isExternal = /^https?:\/\//i.test(value.url);
+        const linkProps = isExternal
+          ? { target: "_blank", rel: "noopener noreferrer" }
+          : {};
 
-                      {value.github?.trim() && (
-                        <span className="right" style={{ float: "right" }}>
-                          <a
-                            href={value.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <FaGithub size={30} />
-                          </a>
-                        </span>
-                      )}
-                    </p>
-                    <h4>
-                      <a
-                        href={value.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {value.title}
+        return (
+          <div className={`${column}`} key={index}>
+            <div className="item-portfolio-static">
+              <div>
+                <div className="portfolio-static">
+                  <div className="thumbnail-inner">
+                    <div className="thumbnail">
+                      <a href={value.url} {...linkProps}>
+                        <img
+                          src={value.image || portfolio1}
+                          alt="Portfolio Images"
+                          onError={(e) => {
+                            e.target.onerror = null;
+                            e.target.src = portfolio1;
+                          }}
+                        />
                       </a>
-                    </h4>
+                    </div>
+                  </div>
+                  <div className="content">
+                    <div className="inner">
+                      <p>
+                        <span className="left">{value.category}</span>
+
+                        {value.github?.trim() && (
+                          <span className="right" style={{ float: "right" }}>
+                            <a
+                              href={value.github}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <FaGithub size={30} />
+                            </a>
+                          </span>
+                        )}
+                      </p>
+                      <h4>
+                        <a href={value.url} {...linkProps}>
+                          {value.title}
+                        </a>
+                      </h4>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </TabPanel>
   );
 }
